@@ -1,14 +1,15 @@
 set nocompatible
 filetype off
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.local/share/nvim/site/plugged')
 Plug 'bling/vim-airline'            "Better status line
+Plug 'digitaltoad/vim-jade'         "Jade syntax highlighting
 Plug 'kien/ctrlp.vim'               "Fuzzy file searching
 Plug 'mxw/vim-jsx'                  "JSX syntax highlighting/indenting
 Plug 'pangloss/vim-javascript'      "Required for vim-jsx
 Plug 'Raimondi/delimitMate'         "Completes parens, etc.
 Plug 'Shougo/deoplete.nvim'         "Better autocompletion
-Plug 'tomasr/molokai'               "Molokai colour scheme
-Plug 'tpope/vim-fugitive'            "Vim git wrapper
+Plug 'tomasr/molokai'               "Monokai colour scheme
+Plug 'tpope/vim-fugitive'           "Vim git wrapper
 
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'} "File tree
 call plug#end()
@@ -62,4 +63,4 @@ set ttimeoutlen=50
 map <C-n> :NERDTreeToggle<CR>
 
 "Use deoplete
-"let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_at_startup = 1
